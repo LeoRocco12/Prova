@@ -16,6 +16,7 @@ while True:
             File_Lipsum = open("Lipsum.txt", "r")
             Testo = [value.split(" ") for value in File_Lipsum]
             Lista_Frasi = [[word.strip(st.punctuation) for word in riga] for riga in Testo]
+            File_Lipsum.close()
 
             # Dopo avere creato questa lista la scorro e cerco se trovo la parola inserita in ingresso.
             Trovata = False
